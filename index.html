@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #000;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #00e1ff !important;
+    }
+
+    /* Hero Section Fullscreen */
+    #hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+    }
+
+    .hero-content h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .hero-content p {
+      margin-top: 1rem;
+      max-width: 500px;
+    }
+
+    /* Profile Image Styling */
+    .profile-image {
+      position: relative;
+      max-width: 350px;
+      margin-left: auto;
+    }
+
+    .profile-image img {
+      width: 100%;
+      border-radius: 50%;
+      border: 10px solid #00e1ff;
+      box-shadow: 0 0 20px #00e1ff;
+    }
+
+    /* Button Styling */
+    .btn-custom {
+      background-color: #00e1ff;
+      color: #000;
+      border-radius: 25px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    /* Social Icons */
+    .social-icons i {
+      margin: 1rem 0.5rem;
+      font-size: 1.5rem;
+      color: #00e1ff;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-white" href="#">HARLYN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects-container">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-me">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Home Section-->
+  <section id="hero" class="container mt-5 container-fluid">
+    <div class="row align-items-center">
+      <!-- Left Side -->
+      <div class="col-md-6 hero-content">
+        <p>Hello, It's Me</p>
+        <h1>Harlyn Mae T. Yanez</h1>
+        <p>And I'm a <span style="color: #00e1ff;">BSIT Student</span></p>
+        <p>A student with a keen interest in web development and technology.</p>
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn btn-custom mt-3">More About Me</a>
+      </div>
+      <!-- Right Side -->
+      <div class="col-md-6 text-center">
+        <div class="profile-image">
+          <img src="pic.jpg" alt="Profile Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+  <!-- About Section -->
+  <style>
+    body {
+      background-color: #0b0b0b; /* Dark background */
+      color: #ffffff; /* White text */
+      font-family: Arial, sans-serif;
+    }
+
+    /* Profile Image Styling */
+    .profile-image {
+      max-width: 250px;
+      margin: auto;
+      position: relative;
+      border-radius: 50%;
+      box-shadow: 0 0 30px 5px #00e1ff, 0 0 60px 10px #bc13fe; /* Glow effect */
+      overflow: hidden;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    /* Section Styling */
+    #about-me {
+      min-height: 100vh; /* Full screen height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .section-heading span {
+      color: #00e1ff; /* Highlight 'Me' text */
+    }
+
+    p {
+      line-height: 1.8;
+      color: #dcdcdc;
+      font-size: 1rem;
+    }
+
+    /* Button Styling */
+    .btn-custom {
+      background-color: #00e1ff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      padding: 0.7rem 2rem;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: #ffffff;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="container-fluid">
+    <div class="row align-items-center text-center text-md-start">
+      <!-- Profile Image -->
+      <div class="col-md-5 mb-4 mb-md-0">
+        <div class="profile-image">
+          <img src="pic.jpg" alt="Profile Image">
+        </div>
+      </div>
+      <!-- About Me Content -->
+      <div class="col-md-7 px-md-5">
+        <h2 class="section-heading">About<span>Me</span></h2>
+        <h4 class="mt-3 mb-4 fw-bold">Second Year BSIT student</h4>
+        <p>
+          I am passionate about learning new programming languages and improving my technical skills.
+        </p>
+        <p>
+          As a girl in the tech field, I strive to break stereotypes and inspire other women to pursue their passion for technology.
+        </p>
+        <button class="btn btn-custom mt-3">More About Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Section Header */
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    /* Skills Cards */
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .skill-card {
+      width: 150px;
+      height: 200px;
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 255, 255, 0.5);
+    }
+
+    .skill-icon {
+      font-size: 3rem;
+      color: #00e1ff;
+      margin-bottom: 0.5rem;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .skill-percent {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .skill-name {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #aaa;
+    }
+  </style>
+
+  <!-- Skills Section -->
+   
+  <section id="skills" class="container my-5">
+    <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+    <div class="skills-container">
+      <!-- WordPress -->
+      <div class="skill-card" data-aos="zoom-in">
+        <i class="fab fa-wordpress skill-icon"></i>
+        <div class="skill-percent" data-target="70">0%</div>
+        <div class="skill-name">WordPress</div>
+      </div>
+      <!-- Figma -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fab fa-figma skill-icon"></i>
+        <div class="skill-percent" data-target="60">0%</div>
+        <div class="skill-name">Figma</div>
+      </div>
+      <!-- HTML -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <i class="fab fa-html5 skill-icon"></i>
+        <div class="skill-percent" data-target="99">0%</div>
+        <div class="skill-name">HTML</div>
+      </div>
+      <!-- Bootstrap -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+        <i class="fab fa-bootstrap skill-icon"></i>
+        <div class="skill-percent" data-target="89">0%</div>
+        <div class="skill-name">Bootstrap</div>
+      </div>
+      <!-- Angular -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="800">
+        <i class="fab fa-angular skill-icon"></i>
+        <div class="skill-percent" data-target="50">0%</div>
+        <div class="skill-name">Angular</div>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="1000">
+        <i class="fab fa-js skill-icon"></i>
+        <div class="skill-percent" data-target="75">0%</div>
+        <div class="skill-name">JavaScript</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- JavaScript for Animating Percentages -->
+  <script>
+    AOS.init(); // Initialize AOS
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const skillPercents = document.querySelectorAll(".skill-percent");
+
+      // Function to animate counting
+      function animateSkillCount(el) {
+        const target = parseInt(el.getAttribute("data-target"));
+        let count = 0;
+        const stepTime = Math.floor(2000 / target); // Animation duration
+
+        const updateCount = () => {
+          if (count < target) {
+            count++;
+            el.innerText = count + "%";
+            setTimeout(updateCount, stepTime);
+          } else {
+            el.innerText = target + "%";
+          }
+        };
+
+        updateCount();
+      }
+
+      // Animate each skill percentage
+      skillPercents.forEach((el) => {
+        animateSkillCount(el);
+      });
+    });
+  </script>
+  
+   
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Section Header */
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    /* Project Cards */
+    .project-card {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 255, 255, 0.5);
+    }
+
+    .project-img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      color: #00e1ff;
+      margin-top: 1rem;
+    }
+
+    .project-description {
+      color: #aaa;
+      margin-top: 1rem;
+    }
+
+    .btn-view-details {
+      margin-top: 1rem;
+    }
+
+    /* Modal Styles */
+    .modal-header {
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    .modal-body {
+      background-color: #0b0b0b;
+      color: #fff;
+    }
+
+    .modal-footer {
+      background-color: #1c1c1c;
+    }
+  </style>
+ 
+    <!-- Projects Section -->
+  <section class="container my-5">
+    <h2 class="section-title">My Projects</h2>
+
+    <!-- Filters -->
+  
+
+    <!-- Project Cards Container -->
+    <div class="row" id="projects-container">
+      <!-- Dynamic Project Cards will be injected here -->
+    </div>
+  </section>
+
+  <!-- Bootstrap 5 JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    // Sample Projects Data
+    const projects = [
+      {
+        id: 1,
+        title: "Personal Portfolio",
+        category: "web",
+        description: "A responsive personal portfolio built with HTML, CSS, and JavaScript.",
+        img: "Portfolio.png",
+        link: "file:///C:/Users/User/Documents/IPT%20101/index.html#contact-me"
+      },
+      {
+        id: 2,
+        title: "Weather Update App",
+        category: "web",
+        description: "A weather forecasting web app using API calls to fetch weather data.",
+        img: "weather.png",
+        link: "https://weather-application-9x7v.vercel.app/"
+      },
+      {
+        id: 3,
+        title: "Movie App",
+        category: "mobile",
+        description: "A movie app to watch your favorite movies for free.",
+        img: "movie.png",
+        link: "https://harlenmovie.netlify.app/"
+      },
+    
+    ];
+
+    // Function to display projects dynamically
+    function displayProjects(projects) {
+      const container = document.getElementById('projects-container');
+      container.innerHTML = ''; // Clear previous content
+
+      projects.forEach(project => {
+        const projectCard = `
+          <div class="col-md-4" data-category="${project.category}">
+            <div class="project-card">
+              <img src="${project.img}" alt="${project.title}" class="project-img">
+              <div class="project-title">${project.title}</div>
+              <div class="project-description">${project.description}</div>
+              <button class="btn btn-outline-info btn-view-details" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="openProjectModal(${project.id})">View Details</button>
+            </div>
+          </div>
+        `;
+        container.innerHTML += projectCard;
+      });
+    }
+
+    // Function to filter projects
+    function filterProjects(category) {
+      if (category === 'all') {
+        displayProjects(projects);
+      } else {
+        const filteredProjects = projects.filter(project => project.category === category);
+        displayProjects(filteredProjects);
+      }
+    }
+
+    // Open Project Details Modal
+    function openProjectModal(projectId) {
+      const project = projects.find(p => p.id === projectId);
+      const modalTitle = document.querySelector('.modal-title');
+      const modalBody = document.querySelector('.modal-body');
+      const modalFooter = document.querySelector('.modal-footer');
+
+      modalTitle.innerHTML = project.title;
+      modalBody.innerHTML = `
+        <p>${project.description}</p>
+        <a href="${project.link}" target="_blank" class="btn btn-info">Visit Project</a>
+      `;
+      modalFooter.innerHTML = `<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>`;
+    }
+
+    // Initialize with all projects displayed
+    displayProjects(projects);
+  </script>
+
+  <!-- Modal -->
+  <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModalLabel"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+    <style>
+      button{
+        color: #00e1ff;
+      }
+    </style>
+    <section id="contact-me" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <form id="form">
+            <div class="mb-3">
+              <label for="to_name">Name:</label><br>
+              <input type="text" name="to_name" id="to_name" class="form-control"  placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="from_name">Email:</label>
+              <input type="text" name="from_name" id="from_name" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="reply_to">Subject:</label>
+                <input type="text" name="reply_to" id="reply_to" class="form-control" placeholder="Subject">
+              </div>
+            
+            <div class="mb-3">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" class="form-control" rows="3" required></textarea>
+            </div>
+          
+            
+            <button type="submit" class="btn btn-primary" id="button">Send Message</button>
+          </form>
+      </div>
+    </section>
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+    emailjs.init('OuKThbyhlUPV9ECPS')
+    </script>
+    <script src="code.js"></script>
+    
+    
+    </body>
+    </html>
+    
+  
+  
+
+</body>
+</html>
